@@ -250,14 +250,14 @@
     )
   )
 
-  (gr_line (start 218.44 119.38) (end 218.44 133.35) (layer Edge.Cuts) (width 0.05) (tstamp 5FAAE0B3))
   (gr_line (start 205.74 133.35) (end 205.74 119.38) (layer Edge.Cuts) (width 0.05) (tstamp 5FAAE09E))
-  (gr_line (start 218.44 133.35) (end 205.74 133.35) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 205.74 119.38) (end 218.44 119.38) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 231.14 133.35) (end 205.74 133.35) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 231.14 119.38) (end 231.14 133.35) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 205.74 119.38) (end 231.14 119.38) (layer Edge.Cuts) (width 0.05))
   (gr_text + (at 214.122 123.825) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text +5V (at 215.9 122.555) (layer F.SilkS)
+  (gr_text +5V (at 217.17 122.555) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
