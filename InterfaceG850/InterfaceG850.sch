@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "USB to Serial Interface for SHarp PC-G850"
+Title "USB to Serial Interface for Sharp PC-G850"
 Date "2020-11-13"
 Rev ""
 Comp "ИУ10"
@@ -282,7 +282,7 @@ L Jumper:SolderJumper_2_Open JP1
 U 1 1 5FB026BA
 P 2150 4150
 F 0 "JP1" H 2150 4355 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2150 4264 50  0000 C CNN
+F 1 "3.3V VCCIO" H 2150 4264 50  0000 C CNN
 F 2 "" H 2150 4150 50  0001 C CNN
 F 3 "~" H 2150 4150 50  0001 C CNN
 	1    2150 4150
@@ -293,7 +293,7 @@ L Jumper:SolderJumper_2_Open JP2
 U 1 1 5FB02EFB
 P 3200 4150
 F 0 "JP2" H 3200 4355 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 3200 4264 50  0000 C CNN
+F 1 "5V VCCIO" H 3200 4264 50  0000 C CNN
 F 2 "" H 3200 4150 50  0001 C CNN
 F 3 "~" H 3200 4150 50  0001 C CNN
 	1    3200 4150
@@ -304,7 +304,7 @@ L Jumper:SolderJumper_2_Open JP3
 U 1 1 5FB03951
 P 8150 4450
 F 0 "JP3" H 8150 4655 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8150 4564 50  0000 C CNN
+F 1 "Calc Power from USB" H 8150 4564 50  0000 C CNN
 F 2 "" H 8150 4450 50  0001 C CNN
 F 3 "~" H 8150 4450 50  0001 C CNN
 	1    8150 4450
@@ -409,7 +409,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 4150 1500 3800
 Wire Wire Line
-	2650 4150 2650 3800
+	2650 4150 2650 3900
 Connection ~ 2650 4150
 Wire Wire Line
 	2650 4150 3050 4150
@@ -661,4 +661,107 @@ F 3 "" H 7600 4250 50  0001 C CNN
 	1    7600 4250
 	1    0    0    -1  
 $EndComp
+Text GLabel 10100 2850 0    50   Output ~ 0
+RTSCalc
+Wire Wire Line
+	10100 2850 10300 2850
+Text GLabel 8700 2000 1    50   Input ~ 0
+RTSCalc
+Text GLabel 10100 3050 0    50   Input ~ 0
+RXDCalc
+Text GLabel 10100 3150 0    50   Output ~ 0
+TXDCalc
+Text GLabel 10100 3350 0    50   Input ~ 0
+CTSCalc
+Wire Wire Line
+	10100 3050 10300 3050
+Wire Wire Line
+	10100 3150 10300 3150
+Wire Wire Line
+	10100 3350 10300 3350
+Text GLabel 7500 2000 1    50   Output ~ 0
+RXDCalc
+Text GLabel 7900 2000 1    50   Input ~ 0
+TXDCalc
+Text GLabel 8300 2000 1    50   Output ~ 0
+CTSCalc
+Wire Wire Line
+	10300 2750 9550 2750
+Wire Wire Line
+	9550 2750 9550 2850
+Wire Wire Line
+	10300 2650 9900 2650
+Wire Wire Line
+	9900 2650 9900 2400
+$Comp
+L power:GND #PWR0101
+U 1 1 5FB4F765
+P 9550 2850
+F 0 "#PWR0101" H 9550 2600 50  0001 C CNN
+F 1 "GND" H 9555 2677 50  0000 C CNN
+F 2 "" H 9550 2850 50  0001 C CNN
+F 3 "" H 9550 2850 50  0001 C CNN
+	1    9550 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 2400 1    50   UnSpc ~ 0
+VCCCalc
+Text GLabel 8850 4450 2    50   UnSpc ~ 0
+VCCCalc
+Text GLabel 5900 1500 1    50   UnSpc ~ 0
+VCCIO
+Text GLabel 2650 3800 1    50   UnSpc ~ 0
+VCCIO
+Text GLabel 6800 3550 2    50   Output ~ 0
+RXLED
+Text GLabel 6800 3650 2    50   Output ~ 0
+TXLED
+Text GLabel 5550 5950 3    50   Output ~ 0
+RXLED
+Text GLabel 6550 5950 3    50   Output ~ 0
+TXLED
+Text GLabel 5550 5000 1    50   UnSpc ~ 0
+VCCIO
+Text GLabel 6550 5000 1    50   UnSpc ~ 0
+VCCIO
+NoConn ~ 10300 2550
+NoConn ~ 10300 2950
+NoConn ~ 10300 3450
+NoConn ~ 10300 3550
+NoConn ~ 6800 2950
+NoConn ~ 6800 3050
+NoConn ~ 6800 3150
+NoConn ~ 6800 3250
+NoConn ~ 6800 3750
+NoConn ~ 6800 3850
+NoConn ~ 6800 3950
+NoConn ~ 5200 3450
+NoConn ~ 5200 3650
+NoConn ~ 1450 3050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FB6F554
+P 2650 3900
+F 0 "#FLG0101" H 2650 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 2650 4027 50  0001 L CNN
+F 2 "" H 2650 3900 50  0001 C CNN
+F 3 "~" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2650 3900
+Wire Wire Line
+	2650 3900 2650 3800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FB7081C
+P 3950 1350
+F 0 "#FLG0102" H 3950 1425 50  0001 C CNN
+F 1 "PWR_FLAG" V 3950 1478 50  0001 L CNN
+F 2 "" H 3950 1350 50  0001 C CNN
+F 3 "~" H 3950 1350 50  0001 C CNN
+	1    3950 1350
+	0    1    1    0   
+$EndComp
+NoConn ~ 10300 3250
 $EndSCHEMATC
