@@ -238,7 +238,7 @@ L Device:LED_Small D1
 U 1 1 5FAFFCD6
 P 2600 5050
 F 0 "D1" V 2646 4980 50  0000 R CNN
-F 1 "LED_Small" V 2555 4980 50  0000 R CNN
+F 1 "PWR" V 2555 4980 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2600 5050 50  0001 C CNN
 F 3 "~" V 2600 5050 50  0001 C CNN
 	1    2600 5050
@@ -253,7 +253,7 @@ F 1 "RX" V 5505 5230 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5550 5300 50  0001 C CNN
 F 3 "~" V 5550 5300 50  0001 C CNN
 	1    5550 5300
-	0    -1   -1   0   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D3
@@ -764,4 +764,6 @@ F 3 "~" H 3950 1350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 10300 3250
+Text Label 1650 2150 1    50   ~ 0
+VBUS
 $EndSCHEMATC
