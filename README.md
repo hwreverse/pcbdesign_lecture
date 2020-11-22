@@ -1,2 +1,2 @@
 # pcbdesign_lecture
-PCB Lectures Examples
+PCB Design Lectures Examples
