@@ -766,4 +766,12 @@ Text Label 1650 2150 1    50   ~ 0
 VBUS
 Wire Wire Line
 	5550 5400 5550 5550
+Text Label 1700 2850 0    50   ~ 0
+D+
+Text Label 1700 2950 0    50   ~ 0
+D-
+Text Label 3650 2850 0    50   ~ 0
+USBD_P
+Text Label 3650 2950 0    50   ~ 0
+USBD_N
 $EndSCHEMATC
