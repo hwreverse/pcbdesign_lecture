@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name InterfaceG850)(type KiCad)(uri ${KIPRJMOD}/InterfaceG850.pretty)(options "")(descr ""))
+)
