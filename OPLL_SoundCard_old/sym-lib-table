@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name OPLL)(type Legacy)(uri ${KIPRJMOD}/OPLL.lib)(options "")(descr ""))
-)
